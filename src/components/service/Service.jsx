@@ -16,19 +16,19 @@ const Service = () => {
           <ul className="service_list">
             <li>
               <BiCheck className='service_list-icons' />
-              <p>Welcome To Devil's Hunter Club .</p>
+              <p>User flow charts, diagrams.</p>
             </li>
             <li>
               <BiCheck className='service_list-icons' />
-              <p>Welcome To Devil's Hunter Club .</p>
+              <p>Wireframes.</p>
             </li>
             <li>
               <BiCheck className='service_list-icons' />
-              <p>Welcome To Devil's Hunter Club .</p>
+              <p>Brand and design system development.</p>
             </li>
             <li>
               <BiCheck className='service_list-icons' />
-              <p>Welcome To Devil's Hunter Club .</p>
+              <p>Design technology consulting.</p>
             </li>
           </ul>
         </article>
@@ -40,23 +40,23 @@ const Service = () => {
           <ul className="service_list">
             <li>
               <BiCheck className='service_list-icons' />
-              <p>Welcome To Devil's Hunter Club .</p>
+              <p>Responsive Web design and development.</p>
             </li>
             <li>
               <BiCheck className='service_list-icons' />
-              <p>Welcome To Devil's Hunter Club .</p>
+              <p>Secure Website.</p>
             </li>
             <li>
               <BiCheck className='service_list-icons' />
-              <p>Welcome To Devil's Hunter Club .</p>
+              <p>Website Management.</p>
             </li>
             <li>
               <BiCheck className='service_list-icons' />
-              <p>Welcome To Devil's Hunter Club .</p>
+              <p>testing the system.</p>
             </li>
             <li>
               <BiCheck className='service_list-icons' />
-              <p>Welcome To Devil's Hunter Club .</p>
+              <p>implement.</p>
             </li>
           </ul>
         </article>
@@ -68,19 +68,19 @@ const Service = () => {
           <ul className="service_list">
             <li>
               <BiCheck className='service_list-icons' />
-              <p>Welcome To Devil's Hunter Club .</p>
+              <p>SEO content development and promotion.</p>
             </li>
             <li>
               <BiCheck className='service_list-icons' />
-              <p>Welcome To Devil's Hunter Club .</p>
+              <p>Graphic design.</p>
             </li>
             <li>
               <BiCheck className='service_list-icons' />
-              <p>Welcome To Devil's Hunter Club .</p>
+              <p>Copywriting.</p>
             </li>
             <li>
               <BiCheck className='service_list-icons' />
-              <p>Welcome To Devil's Hunter Club .</p>
+              <p>Video production and marketing.</p>
             </li>
           </ul>
         </article>
@@ -91,3 +91,5 @@ const Service = () => {
 }
 
 export default Service
+
+

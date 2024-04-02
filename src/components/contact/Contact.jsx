@@ -27,7 +27,7 @@ const Contact = () => {
           <article className="contact_option">
             <GrMail className='contact_option-icon'/>
             <h4>Email</h4>
-            <h5>Gwen@gmail.com</h5>
+            <h5>gwenmhrzn25@gmail.com</h5>
             <a href="mailto:gwenmhrzn25@gmail.com" target="_blank">Send a message</a>
           </article>
           <article className="contact_option">
@@ -39,7 +39,7 @@ const Contact = () => {
           <article className="contact_option">
             <RiWhatsappFill className='contact_option-icon'/>
             <h4>WhatsApp</h4>
-            <h5>123456978</h5>
+            <h5>9860732913</h5>
             <a href="https://wa.me/+9779860732913" target="_blank">Send a message</a>
           </article>
         </div>

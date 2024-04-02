@@ -1,50 +1,30 @@
 import React from 'react'
 import './portfolio.css'
-import ME from '../../Assets/mew.jpg'
+import ME from '../../Assets/react_logo.PNG'
 
 const data = [
   {
     id : 1,
     image : ME,
-    title : 'Ramu',
-    git : 'https://github.com',
-    demo : 'https://dribbble.com/shots/popular/illustration'
+    title : 'Portfolio In React',
+    git : 'https://github.com/RanjitMaharjan/Portfolio-in-react',
+    // demo : 'https://dribbble.com/shots/popular/illustration'
   },
   {
     id : 2,
     image : ME,
-    title : 'Ramu Panday',
-    git : 'https://github.com',
-    demo : 'https://dribbble.com/shots/popular/illustration'
+    title : 'PHP Project',
+    git : 'https://github.com/RanjitMaharjan/Hotel_management_in_php',
+    // demo : 'https://dribbble.com/shots/popular/illustration'
   },
   {
     id : 3,
-    image : ME,
-    title : 'Ramu Tarwal',
-    git : 'https://github.com',
-    demo : 'https://dribbble.com/shots/popular/illustration'
+    image : ME  ,
+    title : 'React Project',
+    git : 'https://github.com/RanjitMaharjan/Booking_system_using_React',
+    // demo : 'https://dribbble.com/shots/popular/illustration'
   },
-  {
-    id : 4,
-    image : ME,
-    title : 'Ramu Shyam',
-    git : 'https://github.com',
-    demo : 'https://dribbble.com/shots/popular/illustration'
-  },
-  {
-    id : 5,
-    image : ME,
-    title : 'Ramu Hari',
-    git : 'https://github.com',
-    demo : 'https://dribbble.com/shots/popular/illustration'
-  },
-  {
-    id : 6,
-    image : ME,
-    title : 'Ramu Sha',
-    git : 'https://github.com',
-    demo : 'https://dribbble.com/shots/popular/illustration'
-  },
+  
 ]
 
 const Portfolio = () => {
@@ -64,7 +44,7 @@ const Portfolio = () => {
               <h3>{title}</h3>
               <div className="portfolio_item-cta">
                 <a href={git} className='btn' target='_blank'>Github</a>
-                <a href={demo} className='btn btn-primary' target='_blank'>Live Demo</a>
+                {/* <a href={demo} className='btn btn-primary' target='_blank'>Live Demo</a> */}
               </div>
             </article>
           )
