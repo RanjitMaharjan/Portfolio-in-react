@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/Portfolio-in-react/static/css/main.385fa1b2.css",
+    "main.js": "/Portfolio-in-react/static/js/main.acc5b632.js",
+    "static/js/787.1ed0c42c.chunk.js": "/Portfolio-in-react/static/js/787.1ed0c42c.chunk.js",
+    "static/media/Rj.png": "/Portfolio-in-react/static/media/Rj.3edd8c79627b6ef644ff.png",
+    "static/media/RanjitMaharjan_CV.pdf": "/Portfolio-in-react/static/media/RanjitMaharjan_CV.20c5fb4fed8b45fc39da.pdf",
+    "static/media/Rjmhrzn.jpeg": "/Portfolio-in-react/static/media/Rjmhrzn.dc9da8430d3527755949.jpeg",
+    "static/media/react_logo.PNG": "/Portfolio-in-react/static/media/react_logo.7e457a925200c6e9b09a.PNG",
+    "index.html": "/Portfolio-in-react/index.html",
+    "main.385fa1b2.css.map": "/Portfolio-in-react/static/css/main.385fa1b2.css.map",
+    "main.acc5b632.js.map": "/Portfolio-in-react/static/js/main.acc5b632.js.map",
+    "787.1ed0c42c.chunk.js.map": "/Portfolio-in-react/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.385fa1b2.css",
+    "static/js/main.acc5b632.js"
+  ]
+}
