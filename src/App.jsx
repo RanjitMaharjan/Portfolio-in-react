@@ -1,29 +1,42 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+
 import About from './components/about/About';
 import Contact from './components/contact/Contact';
 import Experience from './components/experience/Experience';
 import Footer from './components/footer/Footer';
-import Header from './components/header/Header'
+import Header from './components/header/Header';
 import Nav from './components/nav/Nav';
 import Portfolio from './components/portfolio/Portfolio';
 import Service from './components/service/Service';
-// import Testimonials from './components/testimonials/Testimonials';
+import Projects from './pages/Project/Projects';
 
 const App = () => {
   return (
-    <>
-    <Header />
-    <Nav />
-    <About />
-    <Experience />
-    <Service />
-    <Portfolio />
-    {/* <Testimonials /> */}
-    <Contact />
-    <Footer />
+    <div className="app-container">
+      <Header />
+      <Nav />
 
-    </>
-  )
-}
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <About />
+              <Experience />
+              <Service />
+              <Portfolio />
+              <Contact />
+            </>
+          }
+        />
 
-export default App
+        <Route path="/projects" element={<Projects />} />
+      </Routes>
+
+      <Footer />
+    </div>
+  );
+};
+
+export default App;
