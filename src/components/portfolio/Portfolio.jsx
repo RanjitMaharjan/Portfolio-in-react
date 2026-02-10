@@ -5,21 +5,23 @@ import { projectsData } from "../../pages/Project/Projects";
 
 const Portfolio = () => {
   // Get last 3 projects
-  const lastThreeProjects = projectsData.slice(-3); // slice(-3) gets last 3 items
+  const lastThreeProjects = projectsData.slice(-4); // slice(-3) gets last 3 items
 
   return (
     <section id="home-projects">
       <h5>My Recent Works</h5>
       <h2>Portfolio</h2>
 
-      <div className=" container portfolio_container">
-          {lastThreeProjects.map(({ id, image, title, details, demo }) => (
+      <div className="container portfolio_container">
+          {lastThreeProjects .map(({ id, image, title, details, demo }) => (
             <article key={id} className="portfolio_item">
               <div className="portfolio_item-image">
                 <img src={image} alt="title" />
               </div>
               <div className="portfolio_item-details">
-                <h3><a href={demo} className="project-title" target="_blank">{title}</a></h3>
+                <div className="project-title-wrapper">
+                  <h3><a href={demo} className="project-title" target="_blank">{title}</a></h3>
+                </div>
                 <div className="portfolio_item-cta">
                   <a href={demo} className="project-btn" target="_blank">
                     Demo
