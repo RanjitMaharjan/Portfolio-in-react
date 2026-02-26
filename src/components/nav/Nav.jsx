@@ -1,21 +1,73 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './nav.css';
 import { FaHome, FaUserAlt, FaBook } from 'react-icons/fa';
 import { RiServiceFill, RiCustomerServiceFill } from 'react-icons/ri';
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
 
 const Nav = () => {
-  const[activeNav, setActiveNav] = useState('#')
+  const [activeNav, setActiveNav] = useState('#');
+
+  useEffect(() => {
+    const sections = document.querySelectorAll("section");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            setActiveNav(`#${entry.target.id}`);
+          }
+        });
+      },
+      {
+        threshold: 0.6, // section visible %
+      }
+    );
+
+    sections.forEach(section => observer.observe(section));
+
+    return () => {
+      sections.forEach(section => observer.unobserve(section));
+    };
+  }, []);
+
   return (
     <nav>
-      <a href="/#" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}><FaHome/></a>
-      <a href="/#about" onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}><FaUserAlt/></a>
-      <a href="/#experience" onClick={() => setActiveNav('#experience')} className={activeNav === '#experience' ? 'active' : ''}><FaBook/></a>
-      <a href="/#service" onClick={() => setActiveNav('#service')} className={activeNav === '#service' ? 'active' : ''}><RiServiceFill/></a>
-      <a href="/#contact" onClick={() => setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}><RiCustomerServiceFill/></a>
-    </nav>
-  )
-}
+      <a
+        href="/#"
+        onClick={() => setActiveNav('#')}
+        className={activeNav === '#' ? 'active' : ''}
+      >
+        <FaHome />
+      </a>
 
-export default Nav
+      <a
+        href="/#about"
+        className={activeNav === '#about' ? 'active' : ''}
+      >
+        <FaUserAlt />
+      </a>
+
+      <a
+        href="/#experience"
+        className={activeNav === '#experience' ? 'active' : ''}
+      >
+        <FaBook />
+      </a>
+
+      <a
+        href="/#service"
+        className={activeNav === '#service' ? 'active' : ''}
+      >
+        <RiServiceFill />
+      </a>
+
+      <a
+        href="/#contact"
+        className={activeNav === '#contact' ? 'active' : ''}
+      >
+        <RiCustomerServiceFill />
+      </a>
+    </nav>
+  );
+};
+
+export default Nav;

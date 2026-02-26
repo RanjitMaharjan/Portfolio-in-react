@@ -88,7 +88,34 @@
 }
 
 .portfolio_item-cta {
-    width: 15%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-btn{
+    background-color: var(--color-bg);
+    height: 80%;
+    max-height: 80px;
+    max-width: 80px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.project-btn svg{
+    font-size: 30px;
+    transform: rotate(-30deg);
+    transition: all 0.3s ease-in-out;
+}
+
+.project-btn:hover svg {
+    font-size: 30px;
+    transform: rotate(-0);
+    fill: var(--color-primary);
 }
 
 /* media query  */

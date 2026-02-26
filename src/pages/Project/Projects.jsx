@@ -9,6 +9,7 @@ import E from '../../Assets/port-img/Precise.png';
 import F from '../../Assets/port-img/Sunformance.png';
 import G from '../../Assets/port-img/Sunrobi.png';
 import H from '../../Assets/port-img/Litearllyy.png';
+import { FaArrowRight } from "react-icons/fa";
 
 export const projectsData = [  // <-- export this
   {
@@ -20,7 +21,7 @@ export const projectsData = [  // <-- export this
   },
   {
     id: 2,
-    category: "Wordpres",
+    category: "Wordpress",
     image:B,
     title: "Path 2 Teach",
     demo: "https://path2teach.com/",
@@ -34,35 +35,35 @@ export const projectsData = [  // <-- export this
   },
   {
     id: 4,
-    category: "wordpress",
+    category: "design",
     image:D,
     title: "Peyser",
     demo: "https://www.peyser.com/",
   },
   {
     id: 5,
-    category: "wordpress",
+    category: "design",
     image:E,
     title: "Precise Drainage",
     demo: "https://precisedrainage.uk/",
   },
   {
     id: 6,
-    category: "wordpress",
+    category: "design",
     image:F,
     title: "Sun Formance",
     demo: "https://sunformance.com/",
   },
   {
     id: 7,
-    category: "wordpress",
+    category: "Wordpress",
     image:G,
     title: "Sun Robi",
     demo: "https://www.sunrobi.com/",
   },
   {
     id: 8,
-    category: "wordpress",
+    category: "design",
     image:H,
     title: "Literallyy.",
     demo: "https://literallyy.com/",
@@ -113,7 +114,7 @@ const Projects = () => {
                 </div>
                 <div className="portfolio_item-cta">
                   <a href={demo} className="project-btn" target="_blank">
-                    Demo
+                    <FaArrowRight />
                   </a>
                 </div>
               </div> 

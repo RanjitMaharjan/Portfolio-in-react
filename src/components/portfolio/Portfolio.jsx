@@ -1,6 +1,8 @@
 import React from 'react';
 import './portfolio.css';
+import { Link } from "react-router-dom";
 import { projectsData } from "../../pages/Project/Projects"; 
+import { FaArrowRight } from "react-icons/fa";
 // import ME from '../../Assets/react_logo.PNG'
 
 const Portfolio = () => {
@@ -24,7 +26,7 @@ const Portfolio = () => {
                 </div>
                 <div className="portfolio_item-cta">
                   <a href={demo} className="project-btn" target="_blank">
-                    Demo
+                    <FaArrowRight />
                   </a>
                 </div>
               </div> 
@@ -33,7 +35,7 @@ const Portfolio = () => {
         </div>
 
         <div className="link-button">
-          <link rel="stylesheet" href="" />
+          <Link to="/projects">All Projects</Link>
         </div>
     </section>
   );
