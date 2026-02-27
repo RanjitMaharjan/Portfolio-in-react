@@ -1,9 +1,10 @@
 import React from 'react';
 import './contact.css';
-import {GrMail} from 'react-icons/gr'
-import {BsMessenger} from 'react-icons/bs'
-import {RiWhatsappFill} from 'react-icons/ri'
-import { useRef } from 'react'
+import {GrMail} from 'react-icons/gr';
+import {BsMessenger} from 'react-icons/bs';
+import {RiWhatsappFill} from 'react-icons/ri';
+import { useRef } from 'react';
+import { BsLinkedin } from 'react-icons/bs';
 import emailjs from 'emailjs-com'
 
 
@@ -12,7 +13,7 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_j9ukyp9', 'template_3o7j92q', form.current, 'V-0sTRPnpNjBgy0P8')
+    emailjs.sendForm('service_j9ukyp9', 'template_3o7j92q', form.current, '7qzWWcW7ChDSnls5w')
       
       e.target.reset()
     };
@@ -27,14 +28,20 @@ const Contact = () => {
           <article className="contact_option">
             <GrMail className='contact_option-icon'/>
             <h4>Email</h4>
-            <h5>gwenmhrzn25@gmail.com</h5>
-            <a href="mailto:gwenmhrzn25@gmail.com" target="_blank">Send a message</a>
+            <h5>ranjitmaharjan@gmail.com</h5>
+            <a href="mailto:ranjitmaharjan5@gmail.com" target="_blank">Send a message</a>
           </article>
           <article className="contact_option">
-            <BsMessenger className='contact_option-icon'/>
-            <h4>Messanger</h4>
+            <BsLinkedin className='contact_option-icon'/>
+            <h4>LinkedIn</h4>
             <h5>Ranjit Maharjan</h5>
-            <a href="https://m.me/ranjit.maharjan.94" target="_blank">Send a message</a>
+            <a 
+              href="https://www.linkedin.com/in/ranjit-maharjan-23ba9a334/" 
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Connect with me
+            </a>
           </article>
           <article className="contact_option">
             <RiWhatsappFill className='contact_option-icon'/>

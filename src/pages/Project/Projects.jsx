@@ -76,7 +76,7 @@ const categories = [
   { id: "design", label: "Design" },
 ];
 
-const Projects = () => {
+const Projects = () => {  
   const [activeCategory, setActiveCategory] = useState("all");
 
   const filteredProjects =

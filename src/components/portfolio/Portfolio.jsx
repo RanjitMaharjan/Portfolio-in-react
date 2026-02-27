@@ -35,7 +35,7 @@ const Portfolio = () => {
         </div>
 
         <div className="link-button">
-          <Link to="/projects">All Projects</Link>
+          <Link to="/projects" className='btn btn-primary'>All Projects</Link>
         </div>
     </section>
   );
