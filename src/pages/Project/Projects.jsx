@@ -9,6 +9,8 @@ import E from '../../Assets/port-img/Precise.png';
 import F from '../../Assets/port-img/Sunformance.png';
 import G from '../../Assets/port-img/Sunrobi.png';
 import H from '../../Assets/port-img/Litearllyy.png';
+import I from '../../Assets/port-img/Alisondeyette.png';
+import J from '../../Assets/port-img/D-1.png';
 import { FaArrowRight } from "react-icons/fa";
 
 export const projectsData = [  // <-- export this
@@ -35,21 +37,21 @@ export const projectsData = [  // <-- export this
   },
   {
     id: 4,
-    category: "design",
+    category: "Wordpress",
     image:D,
     title: "Peyser",
     demo: "https://www.peyser.com/",
   },
   {
     id: 5,
-    category: "design",
+    category: "Wordpress",
     image:E,
     title: "Precise Drainage",
     demo: "https://precisedrainage.uk/",
   },
   {
     id: 6,
-    category: "design",
+    category: "Wordpress",
     image:F,
     title: "Sun Formance",
     demo: "https://sunformance.com/",
@@ -63,10 +65,24 @@ export const projectsData = [  // <-- export this
   },
   {
     id: 8,
-    category: "design",
+    category: "Wordpress",
     image:H,
     title: "Literallyy.",
     demo: "https://literallyy.com/",
+  },
+  {
+    id: 9,
+    category: "Wordpress",
+    image:I,
+    title: "Alisondeyette",
+    demo: "https://alisondeyette.com/",
+  },
+  {
+    id: 10,
+    category: "design",
+    image:J,
+    title: "Slider Design",
+    demo: "https://ac-post-carousel.vercel.app/",
   },
 ];
 

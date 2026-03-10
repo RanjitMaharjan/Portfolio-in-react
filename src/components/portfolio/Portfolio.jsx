@@ -18,7 +18,7 @@ const Portfolio = () => {
           {lastThreeProjects .map(({ id, image, title, details, demo }) => (
             <article key={id} className="portfolio_item">
               <div className="portfolio_item-image">
-                <img src={image} alt="title" />
+                <img src={image} alt="title"vgjjsdgvjhgjsvvsvjsvjhsjsj />
               </div>
               <div className="portfolio_item-details">
                 <div className="project-title-wrapper">
@@ -35,7 +35,7 @@ const Portfolio = () => {
         </div>
 
         <div className="link-button">
-          <Link to="/projects" className='btn btn-primary'>All Projects</Link>
+          <Link to="/projects" className='btn btn-primary'>All  Projects</Link>
         </div>
     </section>
   );

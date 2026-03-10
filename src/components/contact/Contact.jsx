@@ -50,12 +50,12 @@ const Contact = () => {
             <a href="https://wa.me/+9779860732913" target="_blank">Send a message</a>
           </article>
         </div>
-        <form ref={form} onSubmit={sendEmail}>
+        {/* <form ref={form} onSubmit={sendEmail}>
           <input type="text" name='name' placeholder='Your Full name' required />
           <input type="email" name='email' placeholder='Enter Email' required />
           <textarea name="message"cols="20" rows="7" placeholder='Type Your message' required></textarea>
           <button type='submit' className='btn btn-primary'>Send Messaage</button>
-        </form>
+        </form> */}
       </div>
     </section>
   )

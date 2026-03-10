@@ -95,6 +95,7 @@ a:hover{
     transition: var(--transition);
 }
 
+.btn.active,
 .btn:hover{
     background: var(--color-white);
     color: var(--color-bg);

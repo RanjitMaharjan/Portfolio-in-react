@@ -61,18 +61,18 @@ header{
 }
 
 /* media query  */
-
+/* 
 @media screen and (max-width: 1024px){
     header{
         height: 140vh;
     }
-}
+} */
 
 
 @media screen and (max-width: 600px){
-    header{
+    /* header{
         height: 100vh;
-    }
+    } */
 
     .header_socials,.scroll_down{
         display: none;

@@ -30,7 +30,7 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
-    object-position: left;
+    object-position: center;
 }
 
 .portfolio_item-cta {
@@ -118,6 +118,7 @@
     fill: var(--color-primary);
 }
 
+
 /* media query  */
 
 @media screen and (max-width: 1024px) {
@@ -132,4 +133,13 @@
         grid-template-columns: 1fr;
         gap: 1rem;
     }
+
+    .projects_container .tab-buttons{
+        flex-direction: column;
+    }
+
+        .projects_container .tab-buttons .btn{
+            width: 100%;
+            text-align: center;
+        }
 }
